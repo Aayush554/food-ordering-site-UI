@@ -11,7 +11,7 @@ export const ProductPreviewCard = ({ product, onAddProduct }) => {
             <img src={product.imageUrl} className="w-40 h-40 rounded-xl object-cover" alt={product.name} />
             <h2 className="pb-2 text-lg ">{product.name}</h2>
             <p className="mb-2 h-0 line-clamp-40 text-left ">{product.desciption}</p>
-            <AddProduct onAddProduct={addProduct} />
+            <AddProduct product={product} />
         </div>
     )
 }
